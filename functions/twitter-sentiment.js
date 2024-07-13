@@ -4,6 +4,11 @@ const Twit = require('twit');
 
 const sentiment = new Sentiment();
 
+console.log('CONSUMER_KEY:', process.env.CONSUMER_KEY);
+console.log('CONSUMER_SECRET:', process.env.CONSUMER_SECRET);
+console.log('ACCESS_TOKEN:', process.env.ACCESS_TOKEN);
+console.log('ACCESS_TOKEN_SECRET:', process.env.ACCESS_TOKEN_SECRET);
+
 const twit = new Twit({
   consumer_key: process.env.CONSUMER_KEY,
   consumer_secret: process.env.CONSUMER_SECRET,
